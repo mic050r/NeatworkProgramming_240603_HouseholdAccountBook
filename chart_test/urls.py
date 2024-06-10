@@ -1,9 +1,9 @@
-from django.contrib.auth import admin
-from django.urls import path, include
+from django.urls import path
+
+from chart_test import views
 
 app_name = 'chart_test'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('chart_test/', include('chart_test.urls')),
+    path('', views.show_chart, name='show_chart')
 ]
