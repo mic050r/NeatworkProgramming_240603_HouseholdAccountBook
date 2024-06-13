@@ -36,3 +36,8 @@
       1. Category
       2. AccountBook
       3. python manage.py createsuperuser
+   3. views
+      1. CategoryListView
+   4. templates
+      1. category_list.html
+   5. urls 
