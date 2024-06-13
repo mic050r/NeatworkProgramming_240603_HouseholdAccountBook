@@ -28,4 +28,4 @@ class AccountBook(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'{self.type}{self.price}{self.category}{self.time}'
+        return f'{self.type}{self.price}{self.contents}{self.category}{self.time}'
