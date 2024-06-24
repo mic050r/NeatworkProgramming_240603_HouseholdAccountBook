@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chart_test',
-    'accountbook'
+    'accountbook',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [

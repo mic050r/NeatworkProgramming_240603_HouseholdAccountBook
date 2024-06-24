@@ -42,12 +42,19 @@
       3. AccountbookCreateView
       4. AccountbookUpdateView
       5. AccountbookDeleteView
+      6. dashboard_accountBook()
    4. templates
       1. category_list.html
       2. accountbook_list.html
       3. accountbook_update.html
       4. account_confirm_delete.html
+      5. accountbook_dashboard.html
+         1. humanize
+         2. reset.css, nav.css, dashboard.css
    5. urls 
       1. accountbook:category_list
-      2. accountbook:accountbook_update
-      2. accountbook:accountbook_delete
+      2. accountbook:accountbook_list
+      3. accountbook:accountbook_create
+      4. accountbook:accountbook_update
+      5. accountbook:accountbook_delete
+      6. accountbook:account_dashboard
