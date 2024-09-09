@@ -72,13 +72,19 @@ const setCalendarAccountBook = () => {
             calendarTds.forEach((calendarTd) => {
                 if (ddate === Number(calendarTd.innerText)) {
                     calendarTd.classList.add("has-account-book");
-                     calendarTd.onclick = (event) => {
+                    calendarTd.onclick = (event) => {
                         //비동기로 daily_accountbook_list 가져오자
                         const dailyURL = `/accountbook/daily/${year}/${month}/${ddate}/`;
                         fetch(dailyURL)
                             .then((response) => response.text())
                             .then((data) => showDailyAccountBookList(data))
-                            .error((error) => console.error(`Error: ${error}`));
+                            .catch((error) => console.error(`Error: ${error}`));
+                        //비동기로 weekly_chart_data 가져오자
+                        const weeklyURL = `/accountbook/weekly/${year}/${month}/${ddate}/`;
+                        fetch(weeklyURL)
+                            .then((response) => response.json())
+                            .then((data) => updateChart(data))
+                            .catch((error) => console.error(`Error: ${error}`));
                     }
                 }
             });

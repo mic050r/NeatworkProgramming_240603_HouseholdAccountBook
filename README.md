@@ -44,6 +44,7 @@
       5. AccountbookDeleteView
       6. dashboard_accountBook()
       7. get_daily_accountbook_list()
+      8. get_weekly_chart_data()
    4. templates/accountbook/
       1. category_list.html
       2. accountbook_list.html
@@ -54,6 +55,7 @@
          2. reset.css, nav.css, dashboard.css
          3. calendar.js, calendar.css
          4. daily.css
+         5. weekly.js
    5. urls 
       1. accountbook:category_list
       2. accountbook:accountbook_list
@@ -62,3 +64,4 @@
       5. accountbook:accountbook_delete
       6. accountbook:account_dashboard
       7. accountbook:daily_accountbook_list
+      8. accountbook:weekly_chart_data
